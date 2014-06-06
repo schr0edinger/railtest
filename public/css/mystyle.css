@@ -1,0 +1,45 @@
+@charset "utf-8"
+
+/*
+スマホ： 320px - 480px
+タブレット： 480 - 768px
+PC: 768pxそれ以上
+*/
+
+/* 共通の設定 */
+
+
+
+
+
+
+/*スライド*/
+#mainImg {
+    margin: 0 auto;
+    width: 95%;
+    height: 510px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+ 
+#mainImg img {
+    top: 50px;
+    left: 100px;
+    position: absolute;
+}
+img {
+    max-width: 100%;
+}
+
+
+/*スマホ*/
+/*タブレット*/
+@media all and (min-width: 480px) {
+
+}
+/*PC*/
+
+@media all and (min-width: 768px) {
+
+};

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>ZOIY</title>
+    <meta content="テストキーワード" name="keywords"/>
+    <meta content="INDEX,FOLLOW" name="robots"/>
+    <meta content="テストアプリです。テスト" name="description"/>
+    <meta content="テスト" name="copyright"/>
+    <meta content="general" name="rating"/>
+    <link href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css" rel="stylesheet" type="text/css">/</link>
+    <link href="mystyle.css" rel="stylesheet">/</link>
+  </head>
+  <body>
+  	<header>
+  <h1>
+    <big>テスト</big>
+    <h1></h1>
+  </h1>
+</header>
+<%= Form_for(@user) do |f| %>
+   <%= f.email_field :email, { :size => 30, :read_only => true } %><br />
+    <input id="user_email" name="user[email]" read_only="true" size="30" type="email" value="Email@address.com">
+  <%end%>
+  <%= submit_tag '先行登録', :confirm => '送信してもいいですか？' %>
+        <input data-confirm="送信してもいいですか？" name="commit" type="submit" value="先行登録">
+
+
+
+<%= yield %>
+  </body>
+</html>
+
+
+   
